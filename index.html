@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishit Shah | Developer Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #080b14;
+            --card: #121827;
+            --purple: #a78bfa;
+            --blue: #60a5fa;
+            --text: #f8fafc;
+            --muted: #a1a1b5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(8, 11, 20, 0.92);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid #25283b;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav h2 {
+            color: var(--purple);
+            font-size: 1.4rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 22px;
+        }
+
+        nav ul a {
+            color: var(--muted);
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav ul a:hover {
+            color: var(--purple);
+        }
+
+        section {
+            padding: 90px 8%;
+            scroll-margin-top: 75px;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background:
+                radial-gradient(ellipse at 85% 20%, #30205b80, transparent 40%),
+                radial-gradient(ellipse at 10% 85%, #153f6980, transparent 40%);
+        }
+
+        .tag {
+            display: inline-block;
+            color: var(--purple);
+            background: #a78bfa15;
+            border: 1px solid #a78bfa55;
+            border-radius: 30px;
+            padding: 7px 16px;
+            margin-bottom: 25px;
+            font-size: 0.85rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.8rem, 7vw, 5.5rem);
+            line-height: 1.15;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(90deg, #c4b5fd, #60a5fa, #e879f9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero p:not(.tag) {
+            color: var(--muted);
+            max-width: 600px;
+            margin-bottom: 30px;
+            font-size: 1.05rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 24px;
+            border-radius: 10px;
+            background: linear-gradient(110deg, #7c3aed, #2563eb);
+            color: white;
+            font-weight: 700;
+            box-shadow: 0 8px 28px #7c3aed40;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 35px #7c3aed70;
+        }
+
+        section h2 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        section h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            border-radius: 5px;
+            margin: 12px auto 0;
+            background: linear-gradient(90deg, var(--purple), var(--blue));
+        }
+
+        #about {
+            background: linear-gradient(180deg, #0d1220, var(--bg));
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+            color: var(--muted);
+            background: var(--card);
+            border: 1px solid #a78bfa30;
+            border-radius: 18px;
+        }
+
+        .cards {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #171e30, #0e1320);
+            padding: 27px;
+            border: 1px solid #ffffff15;
+            border-radius: 18px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #a78bfa99;
+            box-shadow: 0 15px 35px #00000040;
+        }
+
+        .skill {
+            text-align: center;
+            color: #ddd6fe;
+            font-weight: 600;
+        }
+
+        .card h3 {
+            color: #e9d5ff;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 0.92rem;
+            margin-bottom: 18px;
+        }
+
+        .card a {
+            color: var(--blue);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .card a:hover {
+            color: var(--purple);
+        }
+
+        #contact {
+            text-align: center;
+            background: radial-gradient(ellipse at center, #30205b55, transparent 70%);
+        }
+
+        #contact p {
+            color: var(--muted);
+            margin-bottom: 25px;
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            color: #777f95;
+            border-top: 1px solid #ffffff15;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 12px 18px;
+            }
+
+            section {
+                padding: 65px 6%;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            .hero h1 {
+                letter-spacing: -1px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>Nishit Shah.</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <span class="tag">FY BScIT Student | Aspiring Developer</span>
+        <h1>Hello, I'm<br><span>Nishit Shah</span></h1>
+        <p>I build projects, explore technology, and turn ideas into practical solutions. Currently learning programming and web development.</p>
+        <a class="btn" href="#projects">Explore My Projects →</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a First Year BScIT student . I enjoy learning by building real projects and
+            improving my problem-solving skills. My goal is to keep growing as
+            a developer and create useful digital experiences.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="cards">
+            <div class="card skill">C Programming</div>
+            <div class="card skill">C++ Programming</div>
+            <div class="card skill">HTML5</div>
+            <div class="card skill">CSS3</div>
+            <div class="card skill">Advanced Excel</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>01 / Number Toolkit</h3>
+                <p>A menu-driven C++ program for prime checking, factorials, and number reversal.</p>
+                <a href="https://github.com/nishit-builds/cpp-beginner-projects" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+            </div>
+
+            <div class="card">
+                <h3>02 / Student Records</h3>
+                <p>A C++ application to add, search, and display student records using file handling.</p>
+                <a href="https://github.com/nishit-builds/student-record-system" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+            </div>
+
+            <div class="card">
+                <h3>03 / Expense Tracker</h3>
+                <p>Record and manage expenses, search entries, and calculate total spending.</p>
+                <a href="https://github.com/nishit-builds/cpp-expense-tracker" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+            </div>
+
+            <div class="card">
+                <h3>04 / Quiz Application</h3>
+                <p>A C++ quiz with automatic scoring, answer validation, and a file-based leaderboard.</p>
+                <a href="https://github.com/nishit-builds/cpp-quiz-application" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+            </div>
+
+            <div class="card">
+                <h3>05 / Library Manager</h3>
+                <p>Manage books, search records, and track borrowed and returned books.</p>
+                <a href="https://github.com/nishit-builds/cpp-library-management-system" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+            </div>
+
+            <div class="card">
+                <h3>06 / Personal Portfolio</h3>
+                <p>This website, built using HTML and CSS to showcase my learning journey.</p>
+                <a href="https://github.com/nishit-builds/personal-portfolio-website" target="_blank" rel="noopener noreferrer">View Source ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Let's Connect</h2>
+        <p>Want to see what I'm building or follow my coding journey?</p>
+        <a class="btn" href="https://github.com/nishit-builds" target="_blank" rel="noopener noreferrer">Visit My GitHub ↗</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Nishit Shah · Designed and built with HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
