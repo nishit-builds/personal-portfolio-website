@@ -1,51 +1,29 @@
 # 🌐 Personal Portfolio Website
 
-<p align="center">
-  <strong>A modern, responsive portfolio built with HTML and CSS.</strong>
-</p>
+A personal portfolio website built using HTML and CSS to showcase my skills, education, and programming projects.
 
-<p align="center">
-  <a href="https://github.com/nishit-builds">GitHub Profile</a>
-</p>
+## 🔗 Live Demo
 
----
+**[Visit My Portfolio Website](https://nishit-builds.github.io/personal-portfolio-website/)**
 
-## 👋 About Me
+## 📌 About the Project
 
-Hi, I'm **Nishit Shah**, a First Year BScIT student interested in programming, software development, and cybersecurity.
-
-I created this portfolio to showcase my skills, programming projects, and learning journey as an aspiring developer.
+This is my personal portfolio website, created to introduce myself and display my technical skills and beginner-level programming projects. It provides a simple and organised way to learn about my background and explore my work.
 
 ## ✨ Features
 
-- 🌙 Modern dark-themed interface
-- 🎨 Purple and blue gradient accents
-- 📱 Responsive layout for different screen sizes
-- 🧭 Navigation links to each section
-- 💻 Project cards linked to GitHub repositories
-- ✨ Interactive hover effects and styled buttons
-- 📬 Contact section linking to my GitHub profile
+- Modern dark-themed design
+- Responsive layout for different screen sizes
+- Home, About, Skills, Projects, and Contact sections
+- Hover effects and gradient styling
+- Links to my GitHub programming projects
+- Simple and user-friendly interface
 
 ## 🛠️ Technologies Used
 
-| Technology | Purpose |
-|---|---|
-| HTML5 | Website structure and content |
-| CSS3 | Styling, layout, gradients, and responsive design |
-| Google Fonts | Typography |
-
-The CSS is embedded inside `index.html`, so a separate CSS file is not required.
-
-## 🚀 Getting Started
-
-You can run this project locally without installing any special software.
-
-1. Open this repository on GitHub.
-2. Download the repository using **Code → Download ZIP**, or clone it using Git.
-3. Extract the downloaded ZIP file.
-4. Open `index.html` in your web browser.
-
-An internet connection is needed to load the Google Font.
+- **HTML5** — website structure
+- **CSS3** — styling, layout, gradients, and animations
+- **Google Fonts** — typography
 
 ## 📂 Project Structure
 
@@ -54,54 +32,41 @@ personal-portfolio-website/
 └── index.html
 ```
 
-## 💻 My Featured Projects
+The HTML and CSS are included in a single `index.html` file.
 
-### 1. C++ Number Toolkit
+## 🚀 How to View the Project
 
-A menu-driven C++ program featuring number operations such as prime checking, factorial calculation, and number reversal.
+1. Open the live demo link above.
+2. Explore the different sections of the website.
+3. Visit the Projects section to view my programming work.
 
-[View Repository](https://github.com/nishit-builds/cpp-beginner-projects)
+To view the source code, open this repository on GitHub.
 
-### 2. Student Record Management System
+## 💻 My Other Projects
 
-A C++ application for adding, displaying, and searching student records using file handling.
-
-[View Repository](https://github.com/nishit-builds/student-record-system)
-
-### 3. C++ Expense Tracker
-
-A simple expense management application that supports recording, searching, deleting, and calculating expenses.
-
-[View Repository](https://github.com/nishit-builds/cpp-expense-tracker)
-
-### 4. C++ Quiz Application
-
-A multiple-choice quiz with answer validation, automatic scoring, percentage calculation, and a file-based leaderboard.
-
-[View Repository](https://github.com/nishit-builds/cpp-quiz-application)
-
-### 5. C++ Library Management System
-
-A library application for adding, displaying, and searching books, as well as managing borrowing and returning.
-
-[View Repository](https://github.com/nishit-builds/cpp-library-management-system)
+1. [C++ Number Toolkit](https://github.com/nishit-builds/cpp-beginner-projects)
+2. [Student Record Management System](https://github.com/nishit-builds/student-record-system)
+3. [C++ Expense Tracker](https://github.com/nishit-builds/cpp-expense-tracker)
+4. [C++ Quiz Application](https://github.com/nishit-builds/cpp-quiz-application)
+5. [C++ Library Management System](https://github.com/nishit-builds/cpp-library-management-system)
 
 ## 🎯 Learning Objectives
 
 Through this project, I practised:
 
-- Structuring web pages with HTML
-- Styling layouts with CSS
-- Creating responsive designs
-- Using links and navigation
-- Organizing and documenting projects on GitHub
+- Creating webpages with HTML
+- Styling websites using CSS
+- Building responsive layouts
+- Organising and linking multiple projects
+- Publishing a website using GitHub Pages
 
-## 📬 Connect With Me
+## 👨‍💻 Author
 
-- **GitHub:** [nishit-builds](https://github.com/nishit-builds)
+**Nishit Shah**
+
+- GitHub: [@nishit-builds](https://github.com/nishit-builds)
+- Portfolio: [View Website](https://nishit-builds.github.io/personal-portfolio-website/)
 
 ---
 
-⭐ Thanks for visiting my portfolio repository!
-
-*Built as part of my programming and web development learning journey.*
+⭐ Thank you for visiting my project!
